@@ -1,51 +1,250 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jinx - Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="main.css">
-
-    <meta property="og:title" content="Jinx is a dev">
-    <meta property="og:description" content="A developer passionate about automation, Python, and building cool things.">
-    <meta property="og:image" content="https://jinx.is-a.dev/pfp.webp">
-    <meta property="og:url" content="https://jinx.is-a.dev/">
-    <meta name="theme-color" content="#ff00a9">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Jinx is a dev">
-    <meta name="twitter:description" content="A developer passionate about automation, Python, and building cool things.">
-    <meta name="twitter:image" content="https://jinx.is-a.dev/pfp.webp">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jinx | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <div class="flex items-center justify-center min-h-screen">
-        <div class="bg-black rounded-lg shadow-lg p-8 max-w-sm w-full">
-            <div class="flex justify-center">
-                <img class="w-24 h-24 rounded-full" src="pfp.webp" alt="Profile Picture">
+    <div class="verse-banner">Proverbs 16:3 — “Commit your work to the LORD, and your plans will be established.”</div>
+    <header class="site-header">
+        <div class="brand">Jinx</div>
+        <nav class="nav">
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-text">
+                <p class="eyebrow">Python Automation / Tooling / Creative Coding</p>
+                <h1>Hi, I am Jinx.</h1>
+                <p class="lead">
+                    I build clean, playful tools and apps that make everyday tasks feel smooth.
+                    My strongest work is Python automation. I am not focusing on web UI right now,
+                    but I still enjoy small projects that feel delightful to use.
+                </p>
+                <p class="lead">
+                    These days I code for fun and for my mental and overall health, keeping things light and enjoyable.
+                </p>
+                <div class="cta-row">
+                    <a class="btn primary" href="https://github.com/JinxedUp" target="_blank" rel="noreferrer">GitHub</a>
+                    <a class="btn ghost" href="#contact">Contact</a>
+                </div>
+                <div class="meta-row">
+                    <div class="meta-item">
+                        <span class="meta-label">Experience</span>
+                        <span class="meta-value">HTML/CSS · 2 years</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Python</span>
+                        <span class="meta-value">1 year</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Java</span>
+                        <span class="meta-value">Beginner</span>
+                    </div>
+                </div>
             </div>
-            <h1 class="text-2xl font-bold text-center text-white mt-4">About Me</h1>
-            <p class="text-white text-center mt-4" style="line-height: 1.6;">
-                I'm Jinx, a coder with 2 years of experience in Python, HTML, and JavaScript. I enjoy creating automation scripts and exploring new technologies.
-            </p>
-            <div class="flex justify-center space-x-4 mt-6 social-icons">
-                <a href="https://github.com/jinxedup" class="text-white hover:text-gray-400 transition-colors duration-300">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.838 9.49.5.092.682-.217.682-.482
-                        0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608
-                        1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951
-                        0-1.093.39-1.988 1.03-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115
-                        2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.378.203 2.398.1 2.65.64.7 1.028 1.595 1.028 2.688
-                        0 3.848-2.338 4.695-4.566 4.943.359.308.678.92.678 1.855
-                        0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022
-                        12c0-5.523-4.477-10-10-10z" clip-rule="evenodd" />
-                    </svg>
-                </a>
+            <div class="hero-card">
+                <img src="profile.webp" alt="Portrait of Jinx" class="pfp" />
+                <div class="hero-card-content">
+                    <p class="hero-card-title">Best at</p>
+                    <p class="hero-card-body">Python automation scripts that turn repetitive work into one-click runs.</p>
+                    <div class="badge-row">
+                        <span class="badge">Python</span>
+                        <span class="badge">Automation</span>
+                        <span class="badge">HTML + CSS</span>
+                    </div>
+                </div>
             </div>
-            <footer class="text-center text-gray-500 text-xs mt-8">
-                &copy; 2025 Jinx. All rights reserved.
-            </footer>
-        </div>
-    </div>
-    <script src="script.js"></script>
+        </section>
+
+        <section id="about" class="section reveal">
+            <div class="section-header">
+                <p class="section-eyebrow">About</p>
+                <h2>Focused on making software feel friendly and fast.</h2>
+            </div>
+            <div class="two-col">
+                <p>
+                    I like shipping small, sharp tools with clear UX. My work focuses on automation and
+                    tooling so things run smoothly and stay easy to use. I am always looking for ways to
+                    turn repetitive tasks into one-click moments.
+                </p>
+                <div class="about-list">
+                    <div>
+                        <h3>What I care about</h3>
+                        <p>Speed, clarity, and small touches that make products memorable.</p>
+                    </div>
+                    <div>
+                        <h3>What I build</h3>
+                        <p>CLI utilities, mini games, and browser-based tools.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section reveal">
+            <div class="section-header">
+                <p class="section-eyebrow">Projects</p>
+                <h2>Selected work that shows range and curiosity.</h2>
+            </div>
+            <div class="project-grid">
+                <article class="project-card">
+                    <div class="project-top">
+                        <h3>Retro Dodge</h3>
+                        <span class="project-year">2024</span>
+                    </div>
+                    <p>Retro arcade game made in BASIC with tight controls and classic visuals.</p>
+                    <div class="tag-row">
+                        <span class="tag">Game Dev</span>
+                        <span class="tag">BASIC</span>
+                    </div>
+                    <a class="project-link" href="https://github.com/JinxedUp/retro-dodge" target="_blank" rel="noreferrer">View on GitHub</a>
+                </article>
+                <article class="project-card">
+                    <div class="project-top">
+                        <h3>termvid</h3>
+                        <span class="project-year">2024</span>
+                    </div>
+                    <p>Terminal video player optimized for low bandwidth and quick previews.</p>
+                    <div class="tag-row">
+                        <span class="tag">CLI</span>
+                        <span class="tag">Python</span>
+                    </div>
+                    <a class="project-link" href="https://github.com/JinxedUp/termvid" target="_blank" rel="noreferrer">View on GitHub</a>
+                </article>
+                <article class="project-card">
+                    <div class="project-top">
+                        <h3>raw requests</h3>
+                        <span class="project-year">2024</span>
+                    </div>
+                    <p>A very simple, basic Python HTTP requests library.</p>
+                    <div class="tag-row">
+                        <span class="tag">Python</span>
+                        <span class="tag">HTTP</span>
+                    </div>
+                    <a class="project-link" href="https://github.com/JinxedUp/raw-requests" target="_blank" rel="noreferrer">View on GitHub</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="section reveal">
+            <div class="section-header">
+                <p class="section-eyebrow">Skills</p>
+                <h2>Tools I reach for to ship quickly.</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Python Automation</h3>
+                    <p>Scripts and utilities that remove busywork.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Web UI (not my focus)</h3>
+                    <p>Not focusing on web UI right now.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Creative Coding</h3>
+                    <p>Interactive visuals and playful experiments.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Tooling</h3>
+                    <p>CLI workflows and lightweight apps.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="section reveal">
+            <div class="section-header">
+                <p class="section-eyebrow">FAQ</p>
+                <h2>Quick background and how I got started.</h2>
+            </div>
+            <div class="about-list">
+                <div>
+                    <h3>Why did you start coding?</h3>
+                    <p>I first started coding to make a website gift for someone close to me.</p>
+                </div>
+                <div>
+                    <h3>What did you learn first?</h3>
+                    <p>HTML, then CSS, and afterwards Python.</p>
+                </div>
+                <div>
+                    <h3>First Python moment?</h3>
+                    <p>It took me 3 days to figure out pip and make a ping Discord bot.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact reveal">
+            <div class="contact-card">
+                <div>
+                    <p class="section-eyebrow">Contact</p>
+                    <h2>Want to build something together?</h2>
+                    <p>Open to collaborations and feedback. Find me on GitHub.</p>
+                </div>
+                <div class="contact-actions">
+                    <a class="btn primary" href="https://github.com/JinxedUp" target="_blank" rel="noreferrer">GitHub Profile</a>
+                    <a class="btn ghost" href="https://modrinth.com/user/jinxedup" target="_blank" rel="noreferrer">Modrinth Profile</a>
+                    <a class="btn ghost" href="#projects">View projects</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <span>(c) 2025 Jinx. All rights reserved.</span>
+    </footer>
+
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            if (window.location.hash) {
+                const target = document.querySelector(window.location.hash);
+                if (target) {
+                    target.scrollIntoView({ behavior: "smooth", block: "start" });
+                }
+            }
+
+            const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+            const finePointer = window.matchMedia("(pointer: fine)").matches;
+            if (prefersReducedMotion || !finePointer) {
+                return;
+            }
+
+            let currentScroll = window.scrollY;
+            let targetScroll = window.scrollY;
+            let isTicking = false;
+
+            const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
+            const onWheel = (event) => {
+                event.preventDefault();
+                const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+                targetScroll = clamp(targetScroll + event.deltaY * 0.9, 0, maxScroll);
+                if (!isTicking) {
+                    isTicking = true;
+                    requestAnimationFrame(animateScroll);
+                }
+            };
+
+            const animateScroll = () => {
+                currentScroll += (targetScroll - currentScroll) * 0.12;
+                if (Math.abs(targetScroll - currentScroll) < 0.5) {
+                    currentScroll = targetScroll;
+                    isTicking = false;
+                } else {
+                    requestAnimationFrame(animateScroll);
+                }
+                window.scrollTo(0, currentScroll);
+            };
+
+            window.addEventListener("wheel", onWheel, { passive: false });
+        });
+    </script>
 </body>
 </html>
